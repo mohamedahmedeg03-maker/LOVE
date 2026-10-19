@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>مي ♡ أجمل فتاة في الكون</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&family=Reem+Kufi:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#fbf6ee;--bg2:#f0e3cf;--card:rgba(255,255,255,.66);--ink:#46362a;--soft:#7a6552;--gold:#8f6a24;--gold2:#c9a45c;--line:rgba(184,137,60,.32);--paper:#fffaf1;
+  --sky:linear-gradient(180deg,#f6dcc0 0%,#f9e8d2 45%,#fbf6ee 100%);--shadow:rgba(143,106,36,.2);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#1d1711;--bg2:#2a2117;--card:rgba(255,235,200,.07);--ink:#f6ead8;--soft:#cdb99c;--gold:#e6c27c;--line:rgba(230,194,124,.28);--paper:#2b2218;--sky:linear-gradient(180deg,#4a3422,#2b2017 55%,#1d1711);--shadow:rgba(0,0,0,.4)}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#1d1711;--bg2:#2a2117;--card:rgba(255,235,200,.07);--ink:#f6ead8;--soft:#cdb99c;--gold:#e6c27c;--line:rgba(230,194,124,.28);--paper:#2b2218;--sky:linear-gradient(180deg,#4a3422,#2b2017 55%,#1d1711);--shadow:rgba(0,0,0,.4)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Cairo,Tahoma,sans-serif;line-height:1.85;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--bg)}
+a{color:inherit;text-decoration:none}
+svg.i{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;vertical-align:-.12em}
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;display:flex;align-items:center;gap:6px;margin:10px auto 0;max-width:980px;padding:8px 20px;background:var(--card);backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:26px;overflow-x:auto;white-space:nowrap}
+.logo{font-family:'Reem Kufi',serif;font-size:1.6rem;color:var(--gold);margin-inline-end:auto}
+.nav a{padding:3px 13px;border-radius:16px;font-size:.92rem;color:var(--soft)}
+.nav a:hover,.nav a:focus-visible{background:var(--bg2);color:var(--gold);outline:none}
+.gold{background:linear-gradient(100deg,#9c7226,#e8c985 50%,#9c7226);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* hero scene */
+.hero{margin-top:-66px;padding:120px 20px 110px;background:var(--sky);position:relative;overflow:hidden;border-radius:0 0 50% 50%/0 0 50px 50px}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 72% 18%,rgba(255,240,200,.85),transparent 42%),radial-gradient(circle at 20% 70%,rgba(255,220,190,.5),transparent 45%)}
+.city{position:absolute;inset-inline:0;bottom:0;width:100%;height:150px;color:var(--gold2);opacity:.22}
+.bk{position:absolute;border-radius:50%;background:radial-gradient(circle,rgba(255,240,205,.95),rgba(255,240,205,0) 70%);animation:fl 8s ease-in-out infinite}
+@keyframes fl{50%{transform:translate(14px,-22px)}}
+.hero-in{position:relative;z-index:1;max-width:980px;margin:auto;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:10px;text-align:center}
+.bearbox{width:min(80vw,340px);margin:auto;filter:drop-shadow(0 22px 22px var(--shadow));animation:bob 6s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-10px)}}
+.crown{font-size:2.3rem;color:var(--gold2);display:block;margin-bottom:-6px}
+.name{font-family:'Reem Kufi',serif;font-size:clamp(5rem,14vw,8rem);line-height:1.05;margin:0;filter:drop-shadow(0 6px 10px rgba(143,106,36,.25))}
+h1{font-size:clamp(1.3rem,3.4vw,1.9rem);margin:4px 0;font-weight:800}
+.hero p{margin:0 0 22px;color:var(--soft)}
+.btn{display:inline-block;border:0;cursor:pointer;font:inherit;font-weight:600;color:#fff;background:linear-gradient(100deg,#a67c2e,#dcb96e);padding:12px 32px;border-radius:32px;box-shadow:0 12px 28px rgba(143,106,36,.38);transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn:focus-visible,.gift:focus-visible{outline:3px solid var(--gold2);outline-offset:3px}
+
+main{max-width:1060px;margin:auto;padding:0 18px}
+.tiles{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin:-46px 0 50px;position:relative;z-index:2}
+.tile{background:var(--card);backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:22px;padding:16px 8px;text-align:center;transition:transform .25s,box-shadow .25s;box-shadow:0 8px 24px var(--shadow)}
+.tile:hover{transform:translateY(-5px);box-shadow:0 16px 34px var(--shadow)}
+.tile .ic{display:grid;place-items:center;width:48px;height:48px;margin:0 auto 6px;border-radius:50%;font-size:1.5rem;color:var(--gold);background:linear-gradient(145deg,rgba(255,255,255,.9),var(--bg2));border:1px solid var(--line)}
+.tile strong{display:block;color:var(--gold)}
+.tile span{display:block;font-size:.78rem;color:var(--soft);line-height:1.4}
+section{margin:62px 0}
+h2{text-align:center;color:var(--gold);font-size:1.8rem;margin:0 0 6px;font-family:'Reem Kufi',serif}
+.sub{text-align:center;color:var(--soft);margin:0 0 26px}
+.sub::after{content:"";display:block;width:70px;height:2px;margin:14px auto 0;background:linear-gradient(90deg,transparent,var(--gold2),transparent)}
+.letter-wrap{display:grid;grid-template-columns:1.5fr 1fr;gap:30px;align-items:center}
+.paper{background:var(--paper);border:1px solid var(--line);border-radius:6px 26px 6px 26px;padding:30px 32px;box-shadow:0 18px 40px var(--shadow);transform:rotate(-1deg);position:relative}
+.paper h3{color:var(--gold);margin:0 0 10px;font-size:1.45rem;font-family:'Reem Kufi'}
+.paper p{margin:0 0 3px}
+.from{text-align:left;color:var(--gold);font-weight:600;margin-top:12px!important}
+.polaroid{background:#fff;color:#46362a;padding:12px 12px 10px;border-radius:6px;box-shadow:0 16px 34px rgba(70,54,42,.28);transform:rotate(3deg);max-width:250px;margin:auto;text-align:center}
+.polaroid .ph{aspect-ratio:1;border-radius:4px;background:linear-gradient(160deg,#f9e6cc,#e8c99c);display:grid;place-items:end center;overflow:hidden}
+.polaroid svg{width:88%}
+.moments{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:8px 4px 20px}
+.m{flex:0 0 200px;scroll-snap-align:center;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:10px;text-align:center;box-shadow:0 8px 22px var(--shadow)}
+.m .ph{aspect-ratio:1;border-radius:15px;display:grid;place-items:center;font-size:4rem;color:rgba(255,255,255,.95);overflow:hidden}
+.m:nth-child(1) .ph{background:linear-gradient(150deg,#f6dcbc,#dcb98a);place-items:end center}
+.m:nth-child(2) .ph{background:linear-gradient(180deg,#f2c9a0,#fbe9cf)}
+.m:nth-child(3) .ph{background:linear-gradient(150deg,#e9cfa4,#c9a45c)}
+.m:nth-child(4) .ph{background:linear-gradient(150deg,#f8e8d0,#e0bd8a)}
+.m .ph svg.bear{width:90%}
+.m p{margin:8px 0 0;font-weight:600}
+.note{text-align:center;font-size:.82rem;color:var(--soft);margin-top:-8px}
+.gifts{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.gift{font:inherit;color:inherit;cursor:pointer;background:var(--card);border:1px solid var(--line);border-radius:24px;padding:24px 16px;text-align:center;min-height:200px;transition:transform .25s,background .3s;box-shadow:0 8px 22px var(--shadow)}
+.gift:hover{transform:translateY(-5px)}
+.gift .box{display:block;font-size:3.2rem;color:var(--gold);transition:transform .4s}
+.gift.open{background:linear-gradient(150deg,var(--bg2),var(--card))}.gift.open .box{transform:scale(1.2) rotate(-8deg)}
+.gift .msg{display:none;margin-top:8px;font-weight:600;color:var(--gold)}
+.gift.open .msg{display:block}.gift.open .hint{display:none}
+.hint{color:var(--soft);font-size:.9rem}
+.about{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.about div{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:20px 10px;text-align:center}
+.about .ic{display:block;font-size:1.9rem;color:var(--gold)}.about strong{color:var(--gold)}
+.about span{display:block;font-size:.85rem;color:var(--soft)}
+.love{display:flex;align-items:center;gap:18px;max-width:680px;margin:auto;padding:22px 28px;background:var(--card);border:1px solid var(--line);border-radius:34px;font-size:1.25rem;font-weight:600;box-shadow:0 12px 30px var(--shadow)}
+.love svg{width:110px;flex:none}
+footer{text-align:center;padding:26px 16px 44px;color:var(--soft);font-size:.9rem}
+.burst{position:fixed;pointer-events:none;z-index:70;color:var(--gold2);font-size:1.5rem;animation:up 1.6s ease-out forwards}
+@keyframes up{to{transform:translateY(-170px) rotate(40deg);opacity:0}}
+@media (max-width:800px){
+  .hero{padding-top:104px}.hero-in{grid-template-columns:1fr}.tiles{grid-template-columns:repeat(3,1fr)}
+  .letter-wrap{grid-template-columns:1fr}.gifts{grid-template-columns:1fr}.about{grid-template-columns:repeat(2,1fr)}
+  .love{flex-direction:column;text-align:center}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <radialGradient id="fur" cx="50%" cy="35%" r="70%"><stop offset="0" stop-color="#fff3df"/><stop offset="1" stop-color="#e9c595"/></radialGradient>
+    <linearGradient id="hrt" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e8c985"/><stop offset="1" stop-color="#a67c2e"/></linearGradient>
+  </defs>
+  <symbol id="bear" viewBox="0 0 300 320">
+    <circle cx="84" cy="72" r="38" fill="url(#fur)"/><circle cx="216" cy="72" r="38" fill="url(#fur)"/>
+    <circle cx="86" cy="74" r="20" fill="#ecc3a6"/><circle cx="214" cy="74" r="20" fill="#ecc3a6"/>
+    <ellipse cx="150" cy="258" rx="98" ry="70" fill="url(#fur)"/>
+    <ellipse cx="86" cy="306" rx="42" ry="22" fill="url(#fur)"/><ellipse cx="214" cy="306" rx="42" ry="22" fill="url(#fur)"/>
+    <ellipse cx="150" cy="122" rx="98" ry="86" fill="url(#fur)"/>
+    <ellipse cx="150" cy="150" rx="40" ry="31" fill="#fff6e8"/>
+    <ellipse cx="150" cy="134" rx="14" ry="9.500" fill="#5a3a2a"/><ellipse cx="146" cy="131" rx="4" ry="2.500" fill="#fff" opacity=".6"/>
+    <path d="M150 143v10M150 153q-9 9-19 2M150 153q9 9 19 2" fill="none" stroke="#5a3a2a" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="112" cy="112" r="11" fill="#3a2418"/><circle cx="188" cy="112" r="11" fill="#3a2418"/>
+    <circle cx="116" cy="108" r="4" fill="#fff"/><circle cx="192" cy="108" r="4" fill="#fff"/>
+    <ellipse cx="82" cy="142" rx="15" ry="9" fill="#f2b496" opacity=".55"/><ellipse cx="218" cy="142" rx="15" ry="9" fill="#f2b496" opacity=".55"/>
+    <path d="M82 44l30 14-12 26zM82 44L52 58l12 24z" fill="url(#hrt)"/><circle cx="82" cy="58" r="8" fill="#c9a45c"/>
+    <path d="M150 316C52 252 68 184 118 190c18 2 28 14 32 24 4-10 14-22 32-24 50-6 66 62-32 126z" fill="url(#hrt)"/>
+    <path d="M118 200c-10 4-16 12-16 24" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".35"/>
+    <text x="150" y="268" text-anchor="middle" font-family="Reem Kufi,Cairo,sans-serif" font-size="46" font-weight="600" fill="#fffaf0">مي</text>
+    <ellipse cx="82" cy="244" rx="30" ry="20" transform="rotate(-35 82 244)" fill="url(#fur)"/><ellipse cx="218" cy="244" rx="30" ry="20" transform="rotate(35 218 244)" fill="url(#fur)"/>
+  </symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 21s-7-4.400-9-9c-1.200-3 .8-6.500 4-6.500 2 0 3.500 1 5 2.800 1.500-1.800 3-2.800 5-2.800 3.200 0 5.200 3.500 4 6.500-2 4.600-9 9-9 9z"/></symbol>
+  <symbol id="i-cam" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="3"/><circle cx="12" cy="13.500" r="3.500"/><path d="M8 7l1.500-3h5L16 7"/></symbol>
+  <symbol id="i-gift" viewBox="0 0 24 24"><rect x="3" y="9" width="18" height="4" rx="1"/><rect x="5" y="13" width="14" height="8" rx="1"/><path d="M12 9v12M12 9c-3 0-4-4-1.500-4 2 0 1.500 4 1.500 4zM12 9c3 0 4-4 1.500-4-2 0-1.500 4-1.500 4z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 7 9-7"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3l2.800 6 6.200.7-4.700 4.300 1.400 6.500-5.700-3.300-5.700 3.300 1.400-6.500L3 9.700 9.200 9z"/></symbol>
+  <symbol id="i-bfly" viewBox="0 0 24 24"><path d="M12 7v11M12 12C8 3 2 6 5 12c1 2 4 2 7 0M12 12c4-9 10-6 7 0-1 2-4 2-7 0M12 14c-3 6-7 5-6 1M12 14c3 6 7 5 6 1M10 5l-1-2M14 5l1-2"/></symbol>
+  <symbol id="i-crown" viewBox="0 0 24 24"><path d="M3 8l4 4 5-7 5 7 4-4-2 11H5zM5 21h14"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.500A8 8 0 019.500 4 8 8 0 1020 14.500z"/></symbol>
+  <symbol id="city" viewBox="0 0 1000 150"><path fill="currentColor" d="M0 150V100h40V80h30v20h30V60h20V30l10-20 10 20v30h20v40h40V90h30V70h40v80h30V95h40V50h15l10-40 10 40h15v100h40V85h50v65h40V100h30V75h40v75h50V90h40V40l12-30 12 30v110h40V105h60v45h40V80h30v70h60V95h40v55z"/></symbol>
+</svg>
+
+<nav class="nav" aria-label="القائمة">
+  <span class="logo">مي</span>
+  <a href="#top">الرئيسية</a><a href="#about">عن مي</a><a href="#moments">صورها</a><a href="#letter">رسائل ليها</a><a href="#gifts">مفاجآت</a>
+</nav>
+
+<header class="hero" id="top">
+  <svg class="city" preserveAspectRatio="none" aria-hidden="true"><use href="#city"/></svg>
+  <span class="bk" style="width:70px;height:70px;top:22%;right:12%"></span>
+  <span class="bk" style="width:40px;height:40px;top:60%;left:8%;animation-delay:2s"></span>
+  <span class="bk" style="width:90px;height:90px;top:12%;left:36%;animation-delay:4s"></span>
+  <span class="bk" style="width:30px;height:30px;bottom:26%;right:40%;animation-delay:1s"></span>
+  <div class="hero-in">
+    <div class="bearbox"><svg viewBox="0 0 300 320" role="img" aria-label="دبدوب يحمل قلب مي"><use href="#bear"/></svg></div>
+    <div>
+      <svg class="i crown" aria-hidden="true"><use href="#i-crown"/></svg>
+      <p class="name gold">مي</p>
+      <h1>أنتِ أجمل مفاجأة في حياتي</h1>
+      <p>حتى لو لسه ما عرفتيش<br>بكل اللي في قلبي ليكي</p>
+      <a class="btn" href="#gifts">اكتشفي مفاجآتي</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="tiles">
+    <a class="tile" href="#about"><div class="ic"><svg class="i"><use href="#i-heart"/></svg></div><strong>عن مي</strong><span>كل ما يخصها وكل ما تحبه</span></a>
+    <a class="tile" href="#moments"><div class="ic"><svg class="i"><use href="#i-cam"/></svg></div><strong>ألبوم الصور</strong><span>لحظات جميلة معاك</span></a>
+    <a class="tile" href="#gifts"><div class="ic"><svg class="i"><use href="#i-gift"/></svg></div><strong>مفاجآت</strong><span>لأنها تستحق الأفضل</span></a>
+    <a class="tile" href="#letter"><div class="ic"><svg class="i"><use href="#i-mail"/></svg></div><strong>رسائل ليها</strong><span>كلمات من القلب</span></a>
+    <a class="tile" href="#about"><div class="ic"><svg class="i"><use href="#i-star"/></svg></div><strong>أشياء تحبها</strong><span>بنت جميلة وذوقها مميز</span></a>
+    <a class="tile" href="#love"><div class="ic"><svg class="i"><use href="#i-bfly"/></svg></div><strong>تعامليها</strong><span>اهتمي بكل تفصيلة صغيرة</span></a>
+  </div>
+
+  <section id="letter">
+    <h2>رسالة من قلبي إلى مي</h2>
+    <p class="sub">كلمات من القلب</p>
+    <div class="letter-wrap">
+      <article class="paper">
+        <h3>إلى مي</h3>
+        <p>أنتِ مش بس بنت عادية،</p>
+        <p>أنتِ حاجة مختلفة، حاجة حلوة أوي.</p>
+        <p>وجودك في حياتي بيجعل كل شيء أجمل.</p>
+        <p>أحبك في كل تفاصيلك، في ضحكتك، في طيبتك،</p>
+        <p>في كل حاجة فيكي،</p>
+        <p>وإن شاء الله دايماً أكون جنبك،</p>
+        <p>لأنك تستحقي كل الحب.</p>
+        <p class="from">من شخص يحبك ♡</p>
+      </article>
+      <div class="polaroid" aria-hidden="true"><div class="ph"><svg viewBox="0 0 300 320"><use href="#bear"/></svg></div><p style="margin:8px 0 0">أنتِ أجمل شيء في حياتي</p></div>
+    </div>
+  </section>
+
+  <section id="moments">
+    <h2>لحظات جميلة</h2>
+    <p class="sub">صور من أجمل اللحظات .. وأجمل ابتساماتك</p>
+    <div class="moments" tabindex="0" aria-label="ألبوم الصور">
+      <div class="m"><div class="ph"><svg class="bear" viewBox="0 0 300 320"><use href="#bear"/></svg></div><p>ضحكتك</p></div>
+      <div class="m"><div class="ph"><svg class="i"><use href="#i-star"/></svg></div><p>أحلامك</p></div>
+      <div class="m"><div class="ph"><svg class="i"><use href="#i-bfly"/></svg></div><p>جمالك</p></div>
+      <div class="m"><div class="ph"><svg class="i"><use href="#i-heart"/></svg></div><p>طيبتك</p></div>
+    </div>
+    <p class="note">مكان صورك الحقيقية</p>
+  </section>
+
+  <section id="gifts">
+    <h2>مفاجآت</h2>
+    <p class="sub">افتحي كل هدية .. جواها حاجة ليكي</p>
+    <div class="gifts">
+      <button class="gift" type="button"><span class="box"><svg class="i"><use href="#i-gift"/></svg></span><span class="hint">اضغطي لتفتحيها</span><span class="msg">ضحكتك بتصلّح يومي كله، حتى لو كان تعب.</span></button>
+      <button class="gift" type="button"><span class="box"><svg class="i"><use href="#i-heart"/></svg></span><span class="hint">اضغطي لتفتحيها</span><span class="msg">كل مرة بفكر فيكي، بلاقي نفسي بابتسم من غير سبب.</span></button>
+      <button class="gift" type="button"><span class="box"><svg class="i"><use href="#i-moon"/></svg></span><span class="hint">اضغطي لتفتحيها</span><span class="msg">وعد مني: هفضل أحاول أسعدك كل يوم.</span></button>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>عن مي</h2>
+    <p class="sub">كل ما يخصها .. وكل ما تحبه</p>
+    <div class="about">
+      <div><span class="ic"><svg class="i"><use href="#i-heart"/></svg></span><strong>قلبي معك</strong><span>دائماً وأبداً</span></div>
+      <div><span class="ic"><svg class="i"><use href="#i-star"/></svg></span><strong>أنتِ مميزة</strong><span>بكل التفاصيل</span></div>
+      <div><span class="ic"><svg class="i"><use href="#i-bfly"/></svg></span><strong>هديتي للحياة</strong><span>وكل حلو فيها</span></div>
+      <div><span class="ic"><svg class="i"><use href="#i-crown"/></svg></span><strong>أجمل فتاة</strong><span>في هذا الكون</span></div>
+    </div>
+  </section>
+
+  <section id="love">
+    <div class="love"><svg viewBox="0 0 300 320" aria-hidden="true"><use href="#bear"/></svg><p style="margin:0">مي .. وجودك في حياتي<br>أكبر نعمة من كل النعم</p></div>
+  </section>
+</main>
+
+<footer>© 2026 مي .. كل لحظة أجمل<br>أنتِ أجمل ما في حياتي</footer>
+
+<script>
+document.querySelectorAll('.gift').forEach(function(g){
+  g.addEventListener('click',function(){
+    g.classList.add('open');
+    var r=g.getBoundingClientRect();
+    for(var i=0;i<8;i++){
+      var s=document.createElement('span');
+      s.className='burst';s.textContent=['✦','♡','✧','♡'][i%4];
+      s.style.left=(r.left+r.width*Math.random())+'px';
+      s.style.top=(r.top+r.height/2)+'px';
+      document.body.appendChild(s);
+      setTimeout(function(el){el.remove()},1700,s);
+    }
+  });
+});
+</script>
+</body>
+</html>
